@@ -1,85 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Приглашение на День рождения</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<!-- Навигация -->
-<nav>
-    <a href="#description">Описание</a>
-    <a href="#program">Программа</a>
-    <a href="#map-section">Место</a>
-    <a href="#rsvp">Подтвердить участие</a>
-</nav>
-
-<!-- Главный заголовок -->
-<section id="header">
-    <h1>Приглашение на День рождения</h1>
-    <p>Меня зовут Дима. День рождения пройдет с <strong>31.01.2026 16:00</strong> по <strong>01.02.2026 13:00</strong>.</p>
-</section>
-
-<!-- Описание -->
-<section id="description" class="fade-section">
-    <h2>Описание</h2>
-    <p>
-        Дорогие друзья, родные и близкие!<br>
-        Скоро мне исполнится 25 лет — небольшой юбилей, который хочется отметить по‑особенному, в кругу самых дорогих людей.
-        Этот день я хочу провести весело, душевно и уютно, чтобы каждый мог отдохнуть, пообщаться и просто отлично провести время.
-    </p>
-</section>
-
-<!-- Программа -->
-<section id="program" class="fade-section">
-    <h2>Программа</h2>
-    <p>Для отличного проведения отдыха в нашем распоряжении:</p>
-    <div class="program">
-        <div class="program-item">
-            <h3>Загородный дом</h3>
-            <p>Два уютных загородных дома на одном участке с комфортом для всех гостей.</p>
-        </div>
-        <div class="program-item">
-            <h3>Мангал</h3>
-            <p>Две мангальные зоны для приготовления мяса и овощей в ускоренном режиме.</p>
-        </div>
-        <div class="program-item">
-            <h3>Баня</h3>
-            <p>Настоящая деревянная баня — отличный способ согреться в холодную зиму.</p>
-        </div>
-        <div class="program-item">
-            <h3>Настолки</h3>
-            <p>Набор настольных игр для уютного и весёлого времяпровождения.</p>
-        </div>
-    </div>
-    <div class="alert">
-        Празднуем только с хорошим настроением и без алкоголя — смех, игры и вкусная еда гарантированы!
-    </div>
-</section>
-
-<!-- Место проведения -->
-<section id="map-section" class="fade-section">
-    <h2>Место проведения</h2>
-    <p>Город Самара, ул. Ушакова, 21, садовые участки</p>
-    <div id="map"></div>
-</section>
-
-<!-- Подтверждение участия -->
-<section id="rsvp" class="fade-section">
-    <h2>Подтвердить участие</h2>
-    <div class="rsvp-form">
-        <input type="text" id="name" placeholder="Ваше имя" required>
-        <input type="text" id="phone" placeholder="Телефон или Telegram" required>
-        <textarea id="message" placeholder="Сообщение (по желанию)"></textarea>
-        <button onclick="sendRSVP()">Отправить</button>
-        <p id="rsvp-status"></p>
-    </div>
-</section>
-
-<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-<script src="js/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Юбилей 25 лет</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
